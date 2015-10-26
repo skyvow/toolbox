@@ -26,7 +26,7 @@
 	<div class="container">
 		<div class="list-group packages">
 
-			<a ui-sref="bootstrap.list({contactId:$index})" class="package list-group-item" ng-repeat="package in packages | filter:query">
+			<a ui-sref="bootstrap.list({contactId:package.id})" class="package list-group-item" ng-repeat="package in packages | filter:query">
 				<div class="row">
 
 					<div class="col-md-3">
