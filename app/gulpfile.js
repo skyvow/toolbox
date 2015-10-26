@@ -25,8 +25,8 @@ var gulp         = require('gulp'),                   //gulp
 gulp.task('usemin', function() {
   return gulp.src('../src/*.html')
     .pipe(usemin({
-      css: [ rev ],
-      js: [ uglify, rev ],
+      css: [  ],
+      js: [  ],
     }))
     .pipe(gulp.dest('../dist/'));
 });
@@ -35,12 +35,21 @@ gulp.task('usemin', function() {
 gulp.task('styles', function() {
   return sass('../src/styles/main.scss', { style: 'expanded' })
     .pipe(autoprefixer())
-    .pipe(gulp.dest('../src/styles'))
     .pipe(gulp.dest('../dist/styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
-    .pipe(gulp.dest('../src/styles'))
     .pipe(gulp.dest('../dist/styles'))
+    .pipe(notify({ message: 'Styles task complete' }));
+});
+
+// Styles
+gulp.task('styles-src', function() {
+  return sass('../src/styles/main.scss', { style: 'expanded' })
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('../src/styles'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(minifycss())
+    .pipe(gulp.dest('../src/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -156,7 +165,7 @@ gulp.task('default', ['browser-sync'], function() {
 
 
 // 开发环境
-gulp.task('app-src', ['styles'], function() {
+gulp.task('app-src', ['styles-src'], function() {
 
     //静态服务器
     Browsersync.init({
