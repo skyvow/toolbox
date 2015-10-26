@@ -113,6 +113,12 @@
 			"id": 18,
 			"src": "http://fontawesome.io/",
 			"description": "Font Awesome, the iconic font and CSS framework"
+		},
+		{
+			"name": "Iconfont",
+			"id": 19,
+			"src": "http://www.iconfont.cn/",
+			"description": "Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
 		}
 	]
 }

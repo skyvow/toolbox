@@ -176,7 +176,7 @@ gulp.task('app-src', ['styles-src'], function() {
     });
 
     // Watch .scss files
-    gulp.watch('../src/styles/**/*.scss', ['styles']);
+    gulp.watch('../src/styles/**/*.scss', ['styles-src']);
 
     // Watch any files in dist/, reload on change
     gulp.watch(['../src/**']).on('change', reload);

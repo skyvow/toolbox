@@ -127,7 +127,7 @@
     padding: 0 80px 0 20px;
     height: 42px;
     line-height: 42px;
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -135,7 +135,8 @@
     cursor: move;
     background-color: #f2dede;
     border-color: #ebccd1;
-    color: #a94442;
+    color: #8E0707;
+    text-align: center;
 }
 
 .layer-close {
