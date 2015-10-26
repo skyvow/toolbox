@@ -1,0 +1,118 @@
+{ 
+	"list":	[
+		{
+			"name": "bootstrap",
+			"star": 0,
+			"src": "http://www.bootcss.com/",
+			"description": "简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。"
+		},
+		{
+			"name": "BootCDN",
+			"star": 0,
+			"src": "http://www.bootcdn.cn/",
+			"description": "稳定、快速、免费的开源项目 CDN 服务。"
+		},
+		{
+			"name": "jQuery",
+			"star": 0,
+			"src": "http://www.jquery123.com/",
+			"description": "jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。"
+		},
+		{
+			"name": "jQuery Plugin",
+			"star": 0,
+			"src": "http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html",
+			"description": "jQuery插件开发精品教程，让你的jQuery提升一个台阶。"
+		},
+		{
+			"name": "angular.js",
+			"star": 0,
+			"src": "http://docs.angularjs.cn/api",
+			"description": "AngularJS有着诸多特性，最为核心的是：MVVM、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。"
+		},
+		{
+			"name": "AngularStrap",
+			"star": 0,
+			"src": "http://mgcrea.github.io/angular-strap/#",
+			"description": "AngularJS 1.2+ native directives for Twitter Bootstrap 3"
+		},
+		{
+			"name": "nodejs",
+			"star": 0,
+			"src": "http://nodeapi.ucdok.com/#/api/",
+			"description": "Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。"
+		},
+		{
+			"name": "cnodejs",
+			"star": 0,
+			"src": "https://cnodejs.org/",
+			"description": "Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。"
+		},
+		{
+			"name": "CSS参考手册",
+			"star": 0,
+			"src": "http://css.doyoe.com/",
+			"description": "紫色 链接表示该属性在CSS3有修改或者增加了新的属性值；橙色 链接表示该属性是CSS3新增属性。"
+		},
+		{
+			"name": "CSS美化",
+			"star": 0,
+			"src": "http://tool.lu/css/",
+			"description": "CSS在线美化、优化、加密、解密、压缩、解压、整理、格式化。"
+		},
+		{
+			"name": "JSON格式化",
+			"star": 0,
+			"src": "http://www.kjson.com/",
+			"description": "JSON在线工具 - 在线JSON校验格式化工具(K JSON)。"
+		},
+		{
+			"name": "在线二维码图片生成器",
+			"star": 0,
+			"src": "http://www.liantu.com/",
+			"description": "在线二维码生成器提供免费的在线二维码生成服务，可以把wifi网络、电话号码、网址等信息生成对应的二维码图片。"
+		},
+		{
+			"name": "必应在线翻译",
+			"star": 0,
+			"src": "http://www.bing.com/translator/",
+			"description": "这项免费的在线翻译服务可自动翻译文本和网页，支持西班牙语、法语、日语、德语、中文等多种语言之间的互译。"
+		},
+		{
+			"name": "codepen",
+			"star": 0,
+			"src": "http://codepen.io/",
+			"description": "Front End Developer Playground &amp; Code Editor in the Browser"
+		},
+		{
+			"name": "hammer.js",
+			"star": 0,
+			"src": "http://hammerjs.github.io/",
+			"description": "Add multi-touch gestures to your webpage"
+		},
+		{
+			"name": "owl-carousel",
+			"star": 0,
+			"src": "http://www.owlgraphic.com/owlcarousel/",
+			"description": "jQuery Responsive Carousel - Owl Carusel"
+		},
+		{
+			"name": "TmodJS",
+			"star": 0,
+			"src": "https://github.com/aui/tmodjs",
+			"description": "TmodJS（原名 atc）是一个简单易用的前端模板预编译工具。"
+		},
+		{
+			"name": "artTemplate",
+			"star": 0,
+			"src": "https://github.com/aui/artTemplate",
+			"description": "新一代 javascript 模板引擎。"
+		},
+		{
+			"name": "Font Awesome",
+			"star": 0,
+			"src": "http://fontawesome.io/",
+			"description": "Font Awesome, the iconic font and CSS framework"
+		}
+	]
+}

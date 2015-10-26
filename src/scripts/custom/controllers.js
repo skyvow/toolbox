@@ -1,6 +1,6 @@
 App.controller('AppController', ['$scope', '$rootScope', '$http', 'cfpLoadingBar', '$timeout', function($scope, $rootScope, $http, cfpLoadingBar, $timeout){
 
-	$http.get('../api/data.json').success(function(data, status, headers, config) {
+	$http.get('./api/data.json').success(function(data, status, headers, config) {
 		$scope.packages = data['list'];
 		console.log(data['list']);
 	}).error(function(data, status, headers, config) {
