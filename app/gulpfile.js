@@ -20,8 +20,11 @@ var gulp         = require('gulp'),                   //gulp
     reload       = Browsersync.reload,                //自动刷新页面
     clean        = require('gulp-clean'),             //清空文件夹
     usemin       = require('gulp-usemin'),            //替换css、js路径
-    rev          = require('gulp-rev'),               //移动文件
+    rev          = require('gulp-rev'),               //追加哈希值为版本号
     zip          = require('gulp-zip');               //自动打包文件
+
+//时间戳
+var nowDate = '-' + new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
 
 //替换css、js路径
 gulp.task('usemin', function() {
@@ -131,6 +134,7 @@ gulp.task('clean', function() {
 gulp.task('zip', function () {
     return gulp.src('../dist/**/*')
         .pipe(zip('app.zip'))
+        .pipe(rename({ suffix: nowDate }))
         .pipe(gulp.dest('../build'));
 });
 
