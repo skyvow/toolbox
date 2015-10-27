@@ -1,6 +1,6 @@
 /*!
  * gulp
- * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-cache gulp-clean gulp-usemin gulp-rev imagemin-pngquant browser-sync --save-dev
+ * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-cache gulp-clean gulp-usemin gulp-rev imagemin-pngquant gulp-zip browser-sync --save-dev
  */
 
 // Load plugins
@@ -20,7 +20,8 @@ var gulp         = require('gulp'),                   //gulp
     reload       = Browsersync.reload,                //自动刷新页面
     clean        = require('gulp-clean'),             //清空文件夹
     usemin       = require('gulp-usemin'),            //替换css、js路径
-    rev          = require('gulp-rev');               //移动文件
+    rev          = require('gulp-rev'),               //移动文件
+    zip          = require('gulp-zip');               //自动打包文件
 
 //替换css、js路径
 gulp.task('usemin', function() {
@@ -124,6 +125,13 @@ gulp.task('clean', function() {
         '../dist/**/*',
     ], {read: false})
     .pipe(clean({force: true}));
+});
+
+//自动打包文件
+gulp.task('zip', function () {
+    return gulp.src('../dist/**/*')
+        .pipe(zip('app.zip'))
+        .pipe(gulp.dest('../build'));
 });
 
 // 生产环境 
