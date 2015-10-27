@@ -1,6 +1,6 @@
 /*!
  * gulp
- * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-cache gulp-clean gulp-usemin gulp-rev browser-sync --save-dev
+ * $ npm install gulp gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-cache gulp-clean gulp-usemin gulp-rev imagemin-pngquant browser-sync --save-dev
  */
 
 // Load plugins
@@ -11,6 +11,7 @@ var gulp         = require('gulp'),                   //gulp
     jshint       = require('gulp-jshint'),            //js代码校验
     uglify       = require('gulp-uglify'),            //js压缩
     imagemin     = require('gulp-imagemin'),          //img压缩
+    pngquant     = require('imagemin-pngquant'),      //img压缩
     rename       = require('gulp-rename'),            //重命名
     concat       = require('gulp-concat'),            //合并文件
     notify       = require('gulp-notify'),            //更改提醒
@@ -73,7 +74,11 @@ gulp.task('scripts', function() {
 // Images
 gulp.task('images', function() {
     return gulp.src('../src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+    }))
     .pipe(gulp.dest('../dist/images'))
     .pipe(notify({ message: 'Images task complete' }));
 });
