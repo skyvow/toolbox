@@ -229,23 +229,24 @@
   }
 }
 .sidebar {
-    width: 0;
+    width: 320px;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: 1040;
-    box-shadow: 0 2px 6px #79FF9B;
+    box-shadow: none;
     background-image: linear-gradient(135deg,#79FF9B,#6BA5FF,#5A66FB,#E034FF,#BCFF58,#58FFE6,#6E58FF);
     background-size: 500px;
     background-position: 0 0;
-    transform: translateZ(0);
+    transform: translateX(100%);
     transition: all .3s;
     animation: sidebar 16s linear infinite alternate;
 }
 .sidebar.sidebar-active {
     display: block;
-    width: 320px;
+    box-shadow: 0 2px 6px #79FF9B;
+    transform: translateX(0);
 }
 body {
     transition: padding-right .3s;
