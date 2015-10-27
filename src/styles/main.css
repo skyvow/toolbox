@@ -9217,6 +9217,17 @@ a:focus {
   border-left-color: #2c3e50;
 }
 
+@-webkit-keyframes sidebar {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes sidebar {
+  to {
+    background-position: 100% 100%;
+  }
+}
 .sidebar {
   width: 0;
   position: fixed;
@@ -9224,12 +9235,17 @@ a:focus {
   top: 0;
   bottom: 0;
   z-index: 1040;
-  box-shadow: inset 0 2px 6px #000;
-  background: #222;
+  box-shadow: 0 2px 6px #79FF9B;
+  background-image: -webkit-linear-gradient(315deg, #79FF9B, #6BA5FF, #5A66FB, #E034FF, #BCFF58, #58FFE6, #6E58FF);
+  background-image: linear-gradient(135deg, #79FF9B, #6BA5FF, #5A66FB, #E034FF, #BCFF58, #58FFE6, #6E58FF);
+  background-size: 500px;
+  background-position: 0 0;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-transition: all .3s;
           transition: all .3s;
+  -webkit-animation: sidebar 16s linear infinite alternate;
+          animation: sidebar 16s linear infinite alternate;
 }
 
 .sidebar.sidebar-active {
@@ -9344,7 +9360,7 @@ body.sidebar-active {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #999;
+  color: #fff;
   text-align: center;
 }
 .sidebar-inner .search {
