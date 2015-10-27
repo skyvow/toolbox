@@ -1,0 +1,68 @@
+<div class="navbar navbar-inverse navbar-fixed-top hidden-print navbar-back">
+	<div class="container-fluid"><a ui-sref="index" class="btn btn-default navbar-btn btn-back">返回首页</a>
+	</div>
+</div>
+
+<header class="site-header jumbotron">
+	<div class="container">
+		<h1>{{packages[contactId]['name']}}</h1>
+		<p>{{packages[contactId]['description']}}</p>
+	</div>
+</header>
+
+<div class="package-info well well-md">
+	<div class="container">
+		<ul class="list-inline">
+			<li>
+				<i class="fa fa-code-fork" title="最新版本"></i> 
+				<!-- <a href="#3.3.5">3.3.5</a> -->
+			</li>
+			<li>
+				<i class="fa fa-home" title="项目主页"></i> 
+				<a href="https://github.com/skyvow/" target="_blank">https://github.com/skyvow/</a>
+			</li>
+			<li>
+				<i class="fa fa-github" title="Github"></i> 
+				<a href="https://github.com/skyvow/" target="_blank">https://github.com/skyvow/</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<main class="container">
+	<h3>{{packages[contactId]['name']}}</h3>
+	<div class="package-version">
+		<div class="row">
+			<div class="col-md-11 col-md-offset-1 col-sm-12">
+				<div class="list-group">
+					<div class="list-group-item library">
+						<div class="zero-clipboard">
+							<!-- <span class="btn-clipboard btn-clipboard-code btn-copy data-tip-top" data-clipboard-text="{{packages[contactId]['src']}}" data-tip="复制到剪切板">
+								<i class="fa fa-code"></i> 复制 &lt;link&gt; 标签
+							</span> -->
+							<span class="btn-clipboard btn-clipboard-link btn-copy data-tip-top" data-clipboard-text="{{packages[contactId]['src']}}" data-tip="复制到剪切板">
+								<i class="fa fa-link"></i> 复制链接
+							</span>
+						</div>
+						<a class="library-url" href="{{packages[contactId]['src']}}" target="_blank">{{packages[contactId]['src']}}</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-11 col-md-offset-1 col-sm-12">
+				<div class="layer-iframe {{iframeSize}}">
+					<div class="layer-title" move="ok">很多时候，我们想最大化看，比如像这个页面。</div>
+					<span class="layer-setwin">
+						<a class="layer-min" href="javascript:;" ng-click="minIframe()"><cite></cite></a>
+						<a class="layer-ico layer-max" href="javascript:;" ng-click="maxIframe()"></a>
+						<a class="layer-ico layer-close layer-close1" href="javascript:;" ng-click="closeIframe()"></a>
+					</span>
+					<div class="layer-content">
+						<div class="embed-responsive embed-responsive-4by3">
+							<iframe class="embed-responsive-item" ng-src="{{currentProjectUrl}}"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
