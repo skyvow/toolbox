@@ -1,0 +1,110 @@
+<header class="site-header jumbotron" ng-style="{'background-color':color}">
+
+	<div class="site-nav">
+		<a href="" target="_blank">博客</a> <span>/</span> 
+		<a href="">关于</a>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>常用工具收集</h1>
+				<p>稳定、快速、免费的开源项目</span></p>
+				<form class="" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control search clearable" placeholder="搜索开源库，例如：jquery" ng-model="query">
+					 	<i class="fa fa-search"></i>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</header>
+
+<main class="packages-list-container">
+	<div class="container">
+		<div class="list-group packages">
+
+			<a ui-sref="bootstrap.list({contactId:package.id})" class="package list-group-item" ng-repeat="package in packages | filter:query">
+				<div class="row">
+
+					<div class="col-md-3">
+						<h4 class="package-name">{{package.name}}</h4>
+					</div>
+
+					<div class="col-md-9">
+						<div class="package-description">
+							<p>{{package.description}}</p>
+						</div>
+					</div>
+					
+					<div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+						<span><i class="fa fa-star"></i>{{package.id}}</span>
+					</div>
+
+				</div>
+			</a>
+
+		</div>
+	</div>
+	<div class="sidebar-toggle" ng-click="sidebar()" ng-class="{'active':sidebarActive}">
+		<div class="sidebar-toggle-line-wrap">
+			<span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+			<span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+			<span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+		</div>
+	</div>
+	<aside id="sidebar" class="sidebar" ng-class="{'sidebar-active':sidebarActive}">
+	    <div class="sidebar-inner">
+			<form class="" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control search clearable" placeholder="搜索开源库，例如：jquery" ng-model="query">
+				 	<i class="fa fa-search"></i>
+				</div>
+			</form>
+			<h3>预定义的颜色</h3>
+			<input type="color" ng-model="color">
+			<input type="text" ng-model="color" placeholder="#27ae60" style="color: #000; padding: 0 4px;">
+			<!-- <span class="color-picker">
+                <a ng-click="headerStyle={'background-color':'red'}" href="#" id="cmdRed" class="color-red" title="Red">Red</a>
+                <a ng-click="headerStyle={'background-color':'violet'}" href="#" id="cmdViolet" class="color-violet" title="Violet">Violet</a>
+                <a ng-click="headerStyle={'background-color':'blue'}" href="#" id="cmdBlue" class="color-blue" title="Blue">Blue</a>
+                <a ng-click="headerStyle={'background-color':'green'}" href="#" id="cmdGreen" class="color-green" title="Green">Green</a>
+                <a ng-click="headerStyle={'background-color':'yellow'}" href="#" id="cmdYellow" class="color-yellow" title="Yellow">Yellow</a>
+                <a ng-click="headerStyle={'background-color':'orange'}" href="#" id="cmdOrange" class="color-orange" title="Orange">Orange</a>
+            </span> -->
+	    </div>
+  	</aside>
+
+</main>
+
+
+<footer id="footer" class="footer hidden-print" ng-style="{'background-color':color}">
+	<div class="container">
+		<div class="row">
+			<div class="about footer-col col-md-5 col-sm-12" id="about">
+				<h4>关于本站</h4>
+				<p>本站仅代表作者本人观点，网站中陈述、观点判断保持中立，不对所包含内容的准确性、可靠性或完整性提供任何明示或暗示的保证。请读者仅作参考，并请自行承担全部责任。</p>
+				<p>如有雷同，纯属虚构。</p>
+				<p>反馈或建议请发送邮件至：123456789@qq.com</p>
+			</div>
+			<div class="links footer-col col-md-3 col-md-offset-2 col-sm-12">
+				<h4>合作站点</h4>
+				<ul class="list-unstyled">
+					<li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+					<li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+					<li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+					<li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+				</ul>
+			</div>
+			<div class="sponsors footer-col col-md-2 col-sm-12">
+				<h4>赞助商</h4>
+				<p><a href="" style="border-bottom: none" target="_blank">Bootstrap中文网</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备00000000号</a> <span>京公网安备00000000000000</span>
+	</div>
+</footer>

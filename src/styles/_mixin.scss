@@ -1,0 +1,187 @@
+// Opacity
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: ($opacity * 100);
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie});
+}
+
+//Clearfix
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+//Btn
+@mixin btn($color: #333, $background: #F0F0F0) {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.5;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: $color;
+	background-color: $background;
+	background-image: none;
+	border: 1px solid $background;
+	border-radius: 0;
+
+	&:hover,
+	&:focus {
+		color: $color;
+		text-decoration: none;
+		outline: none;
+	}
+
+	&:active {
+		background-image: none;
+		outline: 0;
+		-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+		box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	}
+
+	&.disabled,
+	&[disabled] {
+		cursor: not-allowed;
+		filter: alpha(opacity=65);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		opacity: .65;
+	}
+}
+
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+//Horizontal gradient, from left to right
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+	background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+	background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+	background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); 
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+// Vertical gradient, from top to bottom
+@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+	background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+	background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0);
+}
+
+//Radial gradient
+@mixin gradient-radial($inner-color: #555, $outer-color: #333) {
+	background-image: -webkit-radial-gradient(circle, $inner-color, $outer-color);
+	background-image: radial-gradient(circle, $inner-color, $outer-color);
+	background-repeat: no-repeat;
+}
+
+
+//Directional gradient
+@mixin gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg) {
+	background-repeat: repeat-x;
+	background-image: -webkit-linear-gradient($deg, $start-color, $end-color);
+	background-image: -o-linear-gradient($deg, $start-color, $end-color);
+	background-image: linear-gradient($deg, $start-color, $end-color);
+}
+
+//Triangle
+@mixin triangle($direction, $size, $color) {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: $size;
+    cursor: pointer;
+    @if $direction == top {
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent $color transparent;
+        border-top: none;
+    }
+    @else if $direction == bottom {
+        border-style: solid dashed dashed dashed;
+        border-color: $color transparent transparent transparent;
+        border-bottom: none;
+    }
+    @else if $direction == right {
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent $color;
+        border-right: none;
+    }
+    @else if $direction == left {
+        border-style: dashed solid dashed dashed;
+        border-color: transparent $color transparent transparent;
+        border-left: none;
+    }
+}
+
+//Underline
+@mixin underline($color: #23527c) {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		background: transparent;
+		transform: scale(0);
+		transition: all .3s;
+	}
+
+	&:hover:before {
+		width: 100%;
+		background-color: $color;
+		transform: scale(1);
+	}
+}
+
+//Modal backdrop
+@mixin modal-backdrop() {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+//Absolute center
+@mixin absolute-center($width: auto, $height: auto, $true: true) {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@if $true {
+		transform: translate(-50%, -50%)
+	}
+	@else {
+		width: $width;
+		height: $height;
+		margin-left: -$width/2;
+		margin-top: -$height/2;
+	}
+}
