@@ -8098,7 +8098,7 @@ button.close {
   }
 }
 body {
-  font-family: "Helvetica Neue","Helvetica","Lucida Grande","Arial","Hiragino Sans GB","Microsoft Yahei","WenQuanYi Micro Hei","sans-serif";
+  font-family: "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans-serif";
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -8114,7 +8114,7 @@ body {
 }
 
 .footer li ul, .footer li ol {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 .site-notice {
@@ -8471,7 +8471,7 @@ a:focus {
   text-decoration: none;
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .mostused-packages ul > li a:hover {
@@ -9201,11 +9201,18 @@ a:focus {
   z-index: 9999;
   -webkit-transition: all .3s;
           transition: all .3s;
+  background: #27ae60;
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
 }
 
 #back-to-top.active {
-  opacity: 1;
   bottom: 10px;
+}
+
+#back-to-top:hover {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 #loading-bar .bar {
@@ -9277,7 +9284,9 @@ body.sidebar-active {
   width: 30px;
   height: 30px;
   padding: 5px;
-  background: rgba(39, 174, 96, 0.6);
+  background: #27ae60;
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -9289,6 +9298,8 @@ body.sidebar-active {
 }
 .sidebar-toggle:hover {
   background: #27ae60;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 .sidebar-toggle .sidebar-toggle-line {
   position: relative;
