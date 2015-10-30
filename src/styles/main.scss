@@ -397,3 +397,23 @@ body.sidebar-active {
         background: #d35400;
     }
 }
+.rating {
+    display: inline-block;
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 1px;
+        text-align: center;
+        font-size: 14px;  
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .filled {
+        color: #ffee33;
+    }
+}
