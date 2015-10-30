@@ -25,7 +25,7 @@
 <main class="packages-list-container">
 	<div class="container">
 		<div class="list-group packages">
-
+	<!-- ui-sref="bootstrap.list({contactId:package.id})" -->
 			<a ui-sref="bootstrap.list({contactId:package.id})" class="package list-group-item" ng-repeat="package in packages | filter:query">
 				<div class="row">
 
@@ -40,7 +40,14 @@
 					</div>
 					
 					<div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
-						<span><i class="fa fa-star"></i>{{package.id}}</span>
+						<div star rating-value="ratingVal" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}"></div>
+						<!-- <div>
+						    Max: <input type="number" name="input" ng-model="max" min="0" max="99" required>
+						    <p>current value: {{ratingVal}}</p>
+						    <p>hover on : {{hoverVal?hoverVal:"none"}}</p>
+						    <p>readonly : <input type="checkbox"
+						       ng-model="readonly"></p>
+						  </div> -->
 					</div>
 
 				</div>

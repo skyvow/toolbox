@@ -28,6 +28,19 @@ App.controller('AppController', ['$scope', '$rootScope', '$http', 'cfpLoadingBar
         $rootScope.sidebarActive = !$rootScope.sidebarActive;
     };
     
+    $scope.max = 5;
+    $scope.ratingVal = 2;
+    $scope.readonly = false;
+    $scope.onHover = function(val){
+        $scope.hoverVal = val;
+    };
+    $scope.onLeave = function(){
+        $scope.hoverVal = null;
+    };
+    $scope.onChange = function(val){
+        $scope.ratingVal = val;
+    };
+
 
 }]);
 
