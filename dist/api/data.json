@@ -49,34 +49,34 @@
 			"description": "Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。"
 		},
 		{
-			"name": "CSS参考手册",
+			"name": "CSS Handbook",
 			"id": 8,
 			"src": "http://css.doyoe.com/",
 			"description": "紫色 链接表示该属性在CSS3有修改或者增加了新的属性值；橙色 链接表示该属性是CSS3新增属性。"
 		},
 		{
-			"name": "CSS美化",
+			"name": "CSS Beautify",
 			"id": 9,
 			"src": "http://tool.lu/css/",
 			"description": "CSS在线美化、优化、加密、解密、压缩、解压、整理、格式化。"
 		},
 		{
-			"name": "JSON格式化",
+			"name": "JSON Format",
 			"id": 10,
 			"src": "http://www.kjson.com/",
 			"description": "JSON在线工具 - 在线JSON校验格式化工具(K JSON)。"
 		},
 		{
-			"name": "在线二维码图片生成器",
+			"name": "QR Code",
 			"id": 11,
 			"src": "http://www.liantu.com/",
 			"description": "在线二维码生成器提供免费的在线二维码生成服务，可以把wifi网络、电话号码、网址等信息生成对应的二维码图片。"
 		},
 		{
-			"name": "必应在线翻译",
+			"name": "bing",
 			"id": 12,
 			"src": "http://www.bing.com/translator/",
-			"description": "这项免费的在线翻译服务可自动翻译文本和网页，支持西班牙语、法语、日语、德语、中文等多种语言之间的互译。"
+			"description": "Bing helps you turn information into action, making it faster and easier to go from searching to doing."
 		},
 		{
 			"name": "codepen",
@@ -119,6 +119,36 @@
 			"id": 19,
 			"src": "http://www.iconfont.cn/",
 			"description": "Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
+		},
+		{
+			"name": "layer",
+			"id": 20,
+			"src": "http://layer.layui.com/",
+			"description": "layer是一款近年来口碑极佳的web弹层组件，她具备全方位的解决方案，致力于服务各水平段的开发人员。"
+		},
+		{
+			"name": "ui-router",
+			"id": 21,
+			"src": "http://angular-ui.github.io/ui-router/site/#/api/ui.router",
+			"description": "AngularUI Router is a routing framework for AngularJS."
+		},
+		{
+			"name": "angular-gestures",
+			"id": 22,
+			"src": "https://github.com/wzr1337/angular-gestures",
+			"description": "AngularJS directive that adds support for multi touch gestures to your app, based on hammer.js."
+		},
+		{
+			"name": "xunlei VIP",
+			"id": 23,
+			"src": "http://xunlei.hui.lu/",
+			"description": "迅雷会员 VIP，实时更新。"
+		},
+		{
+			"name": "magnetic link",
+			"id": 24,
+			"src": "http://t.2.m.hui.lu/",
+			"description": "种子转磁力链接"
 		}
 	]
 }

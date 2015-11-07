@@ -23,8 +23,8 @@ var gulp         = require('gulp'),                   //gulp
     rev          = require('gulp-rev'),               //追加哈希值为版本号
     zip          = require('gulp-zip');               //自动打包文件
 
-//时间戳
-var nowDate = '-' + new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
+//当前日期
+var nowDate = '-' + new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate();
 
 //替换css、js路径
 gulp.task('usemin', function() {
