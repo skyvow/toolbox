@@ -19,6 +19,302 @@ $color: #27ae60;
 // 	@include clearfix();
 // }
 
+@keyframes rotateCircleBack {
+  0% {
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes loadTween {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+@keyframes xRightMatrixR {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) rotate(30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(50px) rotate(30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(0px) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes xLeftMatrixR {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) rotate(-30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-50px) rotate(-30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(0px) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load5 {
+    0% {
+        opacity: 0;
+        transform: translate(-30px,30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(-30px,30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load4 {
+    0% {
+        opacity: 0;
+        transform: translate(30px,-30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(30px,-30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load3 {
+    0% {
+        opacity: 0;
+        transform: translate(-30px,-30px) rotate(30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(-30px,-30px) rotate(30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load2 {
+    0% {
+        opacity: 0;
+        transform: translate(-30px,30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(-30px,30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load1 {
+    0% {
+        opacity: 0;
+        transform: translate(30px,30px) rotate(30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(30px,30px) rotate(30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes Load0 {
+    0% {
+        opacity: 0;
+        transform: translate(30px,-30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(30px,-30px) rotate(-30deg) scale(1.5, 1.5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0,0) rotate(0deg) scale(1, 1);
+    }
+}
+
+@keyframes alphaTo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.yoyo-x-right{
+    animation: xRightMatrixR 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-x-left{
+    animation: xLeftMatrixR 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+
+.yoyo-load0{
+    animation: Load0 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-load1{
+    animation: Load1 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-load2{
+    animation: Load2 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-load3{
+    animation: Load3 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-load4{
+    animation: Load4 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+.yoyo-load5{
+    animation: Load5 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+}
+
+
+.load-main-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.95);
+    transform-origin: 0 0;
+    z-index: 2;
+    top:0;
+    left:0;
+}
+
+.load-box {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  width: 140px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: -40px;
+  z-index: 99;
+  animation: alphaTo .3s ease-out;
+  -webkit-animation: alphaTo .3s ease-out;
+  font-size: 22px;
+  color: #6EB4E0;
+  text-align: center;
+  font-family: "Raleway","Helvetica Neue",Helvetica,"Lantinghei SC","Microsoft YaHei","微软雅黑","Hiragino Sans GB",SimSun,sans-serif;
+}
+
+.load-box .logo {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: auto;
+  animation: loadTween 2S cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  -webkit-animation: loadTween 2S cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;;
+}
+.load-box span {
+  display: inline-block;
+}
+.load-box span > p {
+  float: left;
+}
+.load-main-box .load-bar {
+  width: 0%;
+  height: 2px;
+  background: #6EB4E0;
+  transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);;
+}
+.load-out {
+  -webkit-animation: alphaOut .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation: alphaOut .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.logo {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",sans-serif;
+    color: #6EB4E0;
+    background: #6EB4E0;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    // transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    // animation: rotateCircleBack 0.6s 1 ease-in-out;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 21px;
+        width: 24px;
+        height: 2px;
+        background: #F0776F;
+        border-radius: 4px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 21px;
+        top: 10px;
+        width: 2px;
+        height: 24px;
+        background: #F0776F;
+        border-radius: 4px;
+    }
+
+    span {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background: #fff;
+        border-radius: 4px;
+    }
+}
 
 .btn-clipboard {
 	position: absolute !important;

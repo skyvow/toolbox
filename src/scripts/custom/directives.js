@@ -104,3 +104,62 @@ App.directive('star', function () {
 	    }
 	};
 });
+
+App.directive('loading', [function(){
+	
+	return {
+		restrict: 'AE',
+		template: '<span ng-transclude></span>',
+		replace: true,
+		transclude: true,
+		link: function(scope, element, attrs, controller) {
+
+			console.log(element.text())
+
+			var str 	  = element.text(),
+	        	loadClass = ["yoyo-load0", "yoyo-load1", "yoyo-load2", "yoyo-load3", "yoyo-load4", "yoyo-load5"];
+
+	      	if (element != null) element.text('');
+
+			function c_random(num, arrlen) {
+				var arr = [];
+
+				function r(i) {
+					var t = Math.round(Math.random() * (num - 1));
+					if (t == arr[i - 1]) {
+						r(i);
+						return;
+					}
+					arr.push(t);
+				}
+
+				for (var i = 0; i < arrlen; i++) {
+					r(i);
+				}
+
+				return arr;
+			}
+
+	      	var tarr = c_random(loadClass.length, str.length);
+
+			for (var i = 0; i < str.length; i++) {
+				var t = str[i];
+
+				if (t == " ") {
+					t = "&nbsp;"
+				}
+
+				var _class = "yoyo-x-left";
+				if (i > 0 && i < str.length - 1) {
+					_class = loadClass[tarr[i]];
+				}
+
+				if (i == str.length - 1) {
+					_class = 'yoyo-x-right';
+				}
+
+				element.append("<p class='" + _class + "'>" + t + "</p>");
+			}
+		}
+	};
+}]);
