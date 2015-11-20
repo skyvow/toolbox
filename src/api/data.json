@@ -149,6 +149,12 @@
 			"id": 24,
 			"src": "http://t.2.m.hui.lu/",
 			"description": "种子转磁力链接"
+		},
+		{
+			"name": "Ant Design",
+			"id": 25,
+			"src": "http://ant.design/",
+			"description": "一个 UI 设计语言"
 		}
 	]
 }
