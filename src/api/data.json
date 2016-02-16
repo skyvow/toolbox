@@ -155,6 +155,60 @@
 			"id": 25,
 			"src": "http://ant.design/",
 			"description": "一个 UI 设计语言"
+		},
+		{
+			"name": "Angular代码规范",
+			"id": 26,
+			"src": "http://www.reqianduan.com/1722.html",
+			"description": "Angular代码规范 热前端"
+		},
+		{
+			"name": "AngularJS常用插件与指令收集",
+			"id": 27,
+			"src": "http://chensd.com/2015-06/AngularJS-popular-Plugins-and-Directive.html",
+			"description": "AngularJS常用插件与指令收集"
+		},
+		{
+			"name": "Mobile Angular UI",
+			"id": 28,
+			"src": "http://www.angularui.cn/",
+			"description": "Mobile Angular UI 是一个类似 jQuery Mobile 的库. 如果你用过 Angular JS and Bootstrap 会很容易上手 !"
+		},
+		{
+			"name": "深入理解ANGULARUI路由",
+			"id": 29,
+			"src": "http://www.cnblogs.com/hughtxp/p/3965916.html",
+			"description": "深入理解ANGULARUI路由"
+		},
+		{
+			"name": "css 命名规范",
+			"id": 30,
+			"src": "http://www.h-ui.net/Hui-notes-cssHame.shtml",
+			"description": "css 命名规范"
+		},
+		{
+			"name": "AngularJS ES6",
+			"id": 31,
+			"src": "http://www.cnblogs.com/darrenji/p/5033188.html",
+			"description": "本篇记录一些AngularJS结合使用ES6的各种写法。"
+		},
+		{
+			"name": "Webpack傻瓜式指南",
+			"id": 32,
+			"src": "https://github.com/vikingmute/webpack-for-fools",
+			"description": "Webpack傻瓜式指南"
+		},
+		{
+			"name": "Webpack 中文指南",
+			"id": 33,
+			"src": "http://zhaoda.net/webpack-handbook/",
+			"description": "Webpack 是当下最热门的前端资源模块化管理和打包工具。"
+		},
+		{
+			"name": "gulp + webpack 构建多页面前端项目",
+			"id": 34,
+			"src": "http://www.07net01.com/2015/11/967593.html",
+			"description": "gulp + webpack 构建多页面前端项目"
 		}
 	]
 }

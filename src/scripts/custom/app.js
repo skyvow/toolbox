@@ -28,8 +28,12 @@ App.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$locationP
     $httpProvider.interceptors.push('timestampMarker');
 }]);
 
-App.run(['$rootScope', function($rootScope){
+App.run(['$rootScope', '$state', function($rootScope, $state){
+    $rootScope.$state = $state;
     $rootScope.sidebarActive = false;
+    $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+        $rootScope.isIndex  = toState.name == 'index';
+    });
 }]);
 
 App.factory('timestampMarker', ['$rootScope', '$timeout', function ($rootScope, $timeout) {
