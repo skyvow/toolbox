@@ -7123,7 +7123,6 @@ button.close {
 
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
@@ -7133,7 +7132,6 @@ button.close {
 
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
@@ -8535,7 +8533,6 @@ a:focus {
 [data-tip]:after {
   position: absolute;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -8597,7 +8594,6 @@ a:focus {
 .data-tip.data-tip-bottom:hover:after,
 [data-tip].data-tip-bottom:hover:after {
   -webkit-transform: translateX(-50%) translateY(8px);
-  -ms-transform: translateX(-50%) translateY(8px);
   transform: translateX(-50%) translateY(8px);
 }
 
@@ -8620,7 +8616,6 @@ a:focus {
 .data-tip.data-tip-top:hover:after,
 [data-tip].data-tip-top:hover:after {
   -webkit-transform: translateX(-50%) translateY(-8px);
-  -ms-transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
 }
 
@@ -8631,7 +8626,6 @@ a:focus {
   top: 50%;
   right: 100%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -8646,7 +8640,6 @@ a:focus {
 .data-tip.data-tip-left:hover:after,
 [data-tip].data-tip-left:hover:after {
   -webkit-transform: translateY(-50%) translateX(-8px);
-  -ms-transform: translateY(-50%) translateX(-8px);
   transform: translateY(-50%) translateX(-8px);
 }
 
@@ -8657,7 +8650,6 @@ a:focus {
   top: 50%;
   left: 100%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -8672,7 +8664,6 @@ a:focus {
 .data-tip.data-tip-right:hover:after,
 [data-tip].data-tip-right:hover:after {
   -webkit-transform: translateY(-50%) translateX(8px);
-  -ms-transform: translateY(-50%) translateX(8px);
   transform: translateY(-50%) translateX(8px);
 }
 
@@ -9306,7 +9297,6 @@ a:focus {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 2;
   top: 0;
@@ -9377,7 +9367,6 @@ a:focus {
   background: #6EB4E0;
   border-radius: 4px;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .logo:before {
@@ -9601,7 +9590,6 @@ a:focus {
 
 .page.ng-leave {
   -webkit-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
   -webkit-animation: rotateFall 1s both ease-in;
           animation: rotateFall 1s both ease-in;
@@ -9752,7 +9740,6 @@ a:focus {
   background-size: 500px;
   background-position: 0 0;
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -9764,7 +9751,6 @@ a:focus {
   display: block;
   box-shadow: 0 2px 6px #79FF9B;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
 }
 
@@ -9815,7 +9801,6 @@ body.sidebar-active {
 .sidebar-toggle .sidebar-toggle-line-first {
   top: 0px;
   -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
           transform: rotateZ(0deg);
   width: 100%;
   opacity: 1;
@@ -9824,7 +9809,6 @@ body.sidebar-active {
 .sidebar-toggle .sidebar-toggle-line-middle {
   top: 0px;
   -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
           transform: rotateZ(0deg);
   width: 100%;
   opacity: 1;
@@ -9833,7 +9817,6 @@ body.sidebar-active {
 .sidebar-toggle .sidebar-toggle-line-last {
   top: 0px;
   -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
           transform: rotateZ(0deg);
   width: 100%;
   opacity: 1;
@@ -9842,7 +9825,6 @@ body.sidebar-active {
 .sidebar-toggle.active .sidebar-toggle-line-first, .sidebar-toggle.active:hover .sidebar-toggle-line-first {
   top: 6px;
   -webkit-transform: rotateZ(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotateZ(-45deg);
   width: 100%;
   opacity: 1;
@@ -9854,13 +9836,11 @@ body.sidebar-active {
   left: 0px;
   top: 0px;
   -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
           transform: rotateZ(0deg);
 }
 .sidebar-toggle.active .sidebar-toggle-line-last, .sidebar-toggle.active:hover .sidebar-toggle-line-last {
   top: -6px;
   -webkit-transform: rotateZ(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotateZ(45deg);
   width: 100%;
   opacity: 1;
@@ -9870,7 +9850,6 @@ body.sidebar-active {
   top: 2px;
   width: 50%;
   -webkit-transform: rotateZ(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotateZ(-45deg);
 }
 .sidebar-toggle:hover .sidebar-toggle-line-middle {
@@ -9880,7 +9859,6 @@ body.sidebar-active {
   top: -2px;
   width: 50%;
   -webkit-transform: rotateZ(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotateZ(45deg);
 }
 

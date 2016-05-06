@@ -209,6 +209,54 @@
 			"id": 34,
 			"src": "http://www.07net01.com/2015/11/967593.html",
 			"description": "gulp + webpack 构建多页面前端项目"
+		},
+		{
+			"name": "图片在线压缩",
+			"id": 35,
+			"src": "https://tinypng.com/",
+			"description": "图片在线压缩"
+		},
+		{
+			"name": "搜索自定义尺寸图片",
+			"id": 36,
+			"src": "https://unsplash.it/900/900/?random",
+			"description": "搜索自定义尺寸图片"
+		},
+		{
+			"name": "ECMAScript 6入门",
+			"id": 37,
+			"src": "http://es6.ruanyifeng.com/",
+			"description": "ECMAScript 6入门"
+		},
+		{
+			"name": "慕课网-国内最大的IT技能学习平台",
+			"id": 38,
+			"src": "http://www.imooc.com/",
+			"description": "慕课网-国内最大的IT技能学习平台"
+		},
+		{
+			"name": "汇智网 - 最前沿的在线互动编程学习平台",
+			"id": 39,
+			"src": "http://www.hubwiz.com/",
+			"description": "汇智网 - 最前沿的在线互动编程学习平台"
+		},
+		{
+			"name": "awesome-javascript",
+			"id": 40,
+			"src": "https://github.com/sorrycc/awesome-javascript",
+			"description": "awesome-javascript"
+		},
+		{
+			"name": "jQuery之家-自由分享jQuery、html5、css3的插件库",
+			"id": 41,
+			"src": "http://www.htmleaf.com/",
+			"description": "jQuery之家-自由分享jQuery、html5、css3的插件库"
+		},
+		{
+			"name": "AngularJS学习笔记",
+			"id": 42,
+			"src": "http://www.zouyesheng.com/angular.html",
+			"description": "AngularJS学习笔记"
 		}
 	]
 }
