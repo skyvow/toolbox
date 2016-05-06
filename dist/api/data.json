@@ -149,6 +149,114 @@
 			"id": 24,
 			"src": "http://t.2.m.hui.lu/",
 			"description": "种子转磁力链接"
+		},
+		{
+			"name": "Ant Design",
+			"id": 25,
+			"src": "http://ant.design/",
+			"description": "一个 UI 设计语言"
+		},
+		{
+			"name": "Angular代码规范",
+			"id": 26,
+			"src": "http://www.reqianduan.com/1722.html",
+			"description": "Angular代码规范 热前端"
+		},
+		{
+			"name": "AngularJS常用插件与指令收集",
+			"id": 27,
+			"src": "http://chensd.com/2015-06/AngularJS-popular-Plugins-and-Directive.html",
+			"description": "AngularJS常用插件与指令收集"
+		},
+		{
+			"name": "Mobile Angular UI",
+			"id": 28,
+			"src": "http://www.angularui.cn/",
+			"description": "Mobile Angular UI 是一个类似 jQuery Mobile 的库. 如果你用过 Angular JS and Bootstrap 会很容易上手 !"
+		},
+		{
+			"name": "深入理解ANGULARUI路由",
+			"id": 29,
+			"src": "http://www.cnblogs.com/hughtxp/p/3965916.html",
+			"description": "深入理解ANGULARUI路由"
+		},
+		{
+			"name": "css 命名规范",
+			"id": 30,
+			"src": "http://www.h-ui.net/Hui-notes-cssHame.shtml",
+			"description": "css 命名规范"
+		},
+		{
+			"name": "AngularJS ES6",
+			"id": 31,
+			"src": "http://www.cnblogs.com/darrenji/p/5033188.html",
+			"description": "本篇记录一些AngularJS结合使用ES6的各种写法。"
+		},
+		{
+			"name": "Webpack傻瓜式指南",
+			"id": 32,
+			"src": "https://github.com/vikingmute/webpack-for-fools",
+			"description": "Webpack傻瓜式指南"
+		},
+		{
+			"name": "Webpack 中文指南",
+			"id": 33,
+			"src": "http://zhaoda.net/webpack-handbook/",
+			"description": "Webpack 是当下最热门的前端资源模块化管理和打包工具。"
+		},
+		{
+			"name": "gulp + webpack 构建多页面前端项目",
+			"id": 34,
+			"src": "http://www.07net01.com/2015/11/967593.html",
+			"description": "gulp + webpack 构建多页面前端项目"
+		},
+		{
+			"name": "图片在线压缩",
+			"id": 35,
+			"src": "https://tinypng.com/",
+			"description": "图片在线压缩"
+		},
+		{
+			"name": "搜索自定义尺寸图片",
+			"id": 36,
+			"src": "https://unsplash.it/900/900/?random",
+			"description": "搜索自定义尺寸图片"
+		},
+		{
+			"name": "ECMAScript 6入门",
+			"id": 37,
+			"src": "http://es6.ruanyifeng.com/",
+			"description": "ECMAScript 6入门"
+		},
+		{
+			"name": "慕课网-国内最大的IT技能学习平台",
+			"id": 38,
+			"src": "http://www.imooc.com/",
+			"description": "慕课网-国内最大的IT技能学习平台"
+		},
+		{
+			"name": "汇智网 - 最前沿的在线互动编程学习平台",
+			"id": 39,
+			"src": "http://www.hubwiz.com/",
+			"description": "汇智网 - 最前沿的在线互动编程学习平台"
+		},
+		{
+			"name": "awesome-javascript",
+			"id": 40,
+			"src": "https://github.com/sorrycc/awesome-javascript",
+			"description": "awesome-javascript"
+		},
+		{
+			"name": "jQuery之家-自由分享jQuery、html5、css3的插件库",
+			"id": 41,
+			"src": "http://www.htmleaf.com/",
+			"description": "jQuery之家-自由分享jQuery、html5、css3的插件库"
+		},
+		{
+			"name": "AngularJS学习笔记",
+			"id": 42,
+			"src": "http://www.zouyesheng.com/angular.html",
+			"description": "AngularJS学习笔记"
 		}
 	]
 }
