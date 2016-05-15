@@ -257,6 +257,12 @@
 			"id": 42,
 			"src": "http://www.zouyesheng.com/angular.html",
 			"description": "AngularJS学习笔记"
+		},
+		{
+			"name": "webpack使用小记",
+			"id": 43,
+			"src": "http://pinkyjie.com/2016/03/05/webpack-tips/",
+			"description": "webpack使用小记"
 		}
 	]
 }
